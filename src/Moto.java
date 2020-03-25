@@ -1,17 +1,19 @@
+public class Moto extends Veicolo{
+    int posti;
+    public Moto(int nMatricola, String nProprietario, int nPosti){
 
-public class Moto extends Auto{
-
-    public Moto(int nMatricola, int nProprietario, String t){
-
-        super(nMatricola, nProprietario,t);
-
-    }
-
-    public void assegnaNumPosti(int i) {
+        super(nMatricola, nProprietario);
+        posti=nPosti;
 
     }
 
-    public int dammiNumPosti() {
+    public void assegnaPOSTI(int i)
+    {
+        posti=i;
+    }
 
+    public int dammiPOSTI()
+    {
+        return posti;
     }
 }

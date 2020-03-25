@@ -1,20 +1,18 @@
 
-public class Camion extends Auto{
+public class Camion extends Veicolo {
+    int assi;
 
-    public Camion(int nMatricola, int nProprietario, String t){
-
-        super(nMatricola, nProprietario,t);
-
-    }
-
-    public void assegnaAssi(int i) {
+    public Camion(int nMatricola, String nProprietario, int a) {
+        super(nMatricola, nProprietario);
+        assi = a;
 
     }
-
-
-    public int dammiAssi() {
-
+        public void assegnaASSI (int insASSI)
+        {
+            assi=insASSI;
+        }
+        public int visualizzaASSI()
+        {
+           return assi;
+        }
     }
-
-
-}

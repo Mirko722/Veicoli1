@@ -1,28 +1,28 @@
 
 public class Veicolo {
 
-    int numeroMatricola;
-    String nomeProprietario;
+      int numeroMatricola;
+      String nomeProprietario;
 
-    public Veicolo(int nMatricola, String nProprietario) {
-        nomeProprietario = nProprietario;
-        numeroMatricola = nMatricola;
+    public Veicolo(int nomeM, String nomeP) {
+        nomeProprietario = nomeP;
+        numeroMatricola = nomeM;
     }
 
-    public String assegnaProprietario() {
-
-        {
-     nomeProprietario=nome;
+    public void assegnaProprietario(String nome)
+    {
+        nomeProprietario=nome;
     }
-
-    public String dammiProprietario() {
-     return nomeProprietario;
+    public String dammiProprietario()
+    {
+        return nomeProprietario;
     }
-
-    public void assegnaMatricola() {
-
+    public void assegnaMatricola(int matricola)
+    {
+     numeroMatricola=matricola;
     }
-
-    public int dammiMatricola() {
+    public int dammiMatricola()
+    {
+        return numeroMatricola;
     }
 }

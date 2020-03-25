@@ -13,19 +13,19 @@ public class provaVeicolo {
         Camion c = new Camion();
         c.assegnaProprietario("Anna");
         c.assegnaMatricola(34231);
-        c.assegnaAssi(3);
+        c.assegnaASSI(3);
 
 
         Moto m = new Moto();
         m.assegnaProprietario("Valentino");
         m.assegnaMatricola(8765);
-        m.assegnaNumPosti(2);
+        m.assegnaPOSTI(2);
 
-        System.out.println("Auto di: " + a.dammiProprietario() + "tipo dell'auto: " + a.dammiTipo());
+        System.out.println("Auto di: " + a.assegnaProprietario(); + "tipo dell'auto: " + a.visualizzatipo());
 
-        System.out.println("Camion di: " + c.dammiProprietario() + "numero Matricola: " + c.dammiMatricola() + "numero assi: " + c.dammiAssi());
+        System.out.println("Camion di: " + c.assegnaProprietario(); + "numero Matricola: " + c.dammiMatricola() + "numero assi: " + c.visualizzaASSI());
 
-        System.out.println("Moto di: " + m.dammiProprietario() + "numero Matricola: " + m.dammiMatricola() + "numero Posti: " + m.dammiNumPosti());
+        System.out.println("Moto di: " + m.assegnaProprietario(); + "numero Matricola: " + m.dammiMatricola() + "numero Posti: " + m.dammiPOSTI());
 
         Veicolo v = new Veicolo();
         v = m;
@@ -34,7 +34,7 @@ public class provaVeicolo {
             System.out.println("il veicolo è una moto");
 
         Moto m2 = (Moto)v;
-        System.out.println(m2.dammiNumPosti());
+        System.out.println(m2.dammiPOSTI());
     }
 }
 

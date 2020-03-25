@@ -1,20 +1,19 @@
 
-public class Auto extends Veicolo{
-    protected String tipo;
-    public Auto(int nMatricola, int nProprietario, String t){
+    public class Auto extends Veicolo {
+        String tipo;
 
-        super(nMatricola, nProprietario);
-        tipo = t;
-    }
-    public String dammiTipo()
-    {
-        return tipo;
-    }
-    public String assegnaTipo(String x)
-    {
-        tipo=x;
-        return tipo;
-    }
+        public Auto(int nMatricola, String nProprietario, String t) {
 
+            super(nMatricola, nProprietario);
+            tipo = t;
 
-}
+        }
+        public void assegnaTipo(String insTIPO)
+        {
+         tipo=insTIPO;
+        }
+        public String visualizzatipo()
+        {
+            return tipo;
+        }
+    }
