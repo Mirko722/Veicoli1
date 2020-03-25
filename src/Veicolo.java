@@ -4,11 +4,6 @@ public class Veicolo {
       int numeroMatricola;
       String nomeProprietario;
 
-    public Veicolo(int nomeM, String nomeP) {
-        nomeProprietario = nomeP;
-        numeroMatricola = nomeM;
-    }
-
     public void assegnaProprietario(String nome)
     {
         nomeProprietario=nome;
